@@ -22,7 +22,7 @@ namespace RTFreeWeb.Entities
         [JsonProperty(PropertyName = "start")]
         public string StartString
         {
-            get { return this.Start.ToString("yyyy-MM-dd hh:mm:ss"); }
+            get { return this.Start.ToString("yyyy-MM-dd HH:mm:ss"); }
         }
 
         [JsonIgnore]
@@ -30,7 +30,7 @@ namespace RTFreeWeb.Entities
         [JsonProperty(PropertyName="end")]
         public string EndString
         {
-            get { return this.End.ToString("yyyy-MM-dd hh:mm:ss"); }
+            get { return this.End.ToString("yyyy-MM-dd HH:mm:ss"); }
         }
 
         [ForeignKey("StationId")]
