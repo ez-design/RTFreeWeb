@@ -1,0 +1,21 @@
+﻿@model RTFreeWeb.Entities.User
+<div class="container">
+    
+    <form asp-controller="Init" asp-action="Index" method="post" style="margin-top:50px">
+        <div class="panel panel-default">
+            <div class="panel-heading">ユーザー作成</div>
+            <div class="panel-body">
+                @Html.ValidationSummary()
+                <div class="form-group">
+                    <label for="id">ID</label>
+                    <input type="text" asp-for="Id" class="form-control" id="id" placeholder="ID" />
+                </div>
+                <div class="form-group">
+                    <label for="id">パスワード</label>
+                    <input type="password" asp-for="Password" class="form-control" id="password" placeholder="パスワード" />
+                </div>
+                <input type="submit" class="btn btn-primary btn-block" value="作成" />
+            </div>
+        </div>
+    </form>
+</div>

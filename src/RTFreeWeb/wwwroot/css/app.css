@@ -1,0 +1,34 @@
+body, html, #app {
+  height: 100%; }
+
+#app {
+  display: flex;
+  flex-direction: column; }
+
+.container {
+  flex-grow: 1;
+  overflow: auto; }
+
+#menu {
+  position: absolute;
+  top: 0px;
+  left: -100%;
+  z-index: 10;
+  height: 100%;
+  width: 100%;
+  transition: left .5s; }
+  #menu.open {
+    left: 0px; }
+  #menu > div {
+    background: #FFFFFF;
+    height: 100%;
+    width: 80%;
+    border-right: 1px solid #BBBBBB; }
+  #menu ul {
+    padding: 0px; }
+  #menu li {
+    padding: 10px;
+    list-style: none;
+    border-bottom: 1px solid #BBBBBB; }
+    #menu li span {
+      margin-right: 10px; }
